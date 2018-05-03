@@ -1,6 +1,5 @@
 package com.example.android.Registro_de_Carros;
 
-import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,18 +8,19 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.android.Registro_de_Carros.Carro;
+
 import java.util.ArrayList;
 
 /**
- * Created by android on 21/04/2018.
+ * Created by android on 28/04/2018.
  */
 
-public class AdaptadorCarro extends RecyclerView  .Adapter<AdaptadorCarro.CarroViewHolder>{
-
-    private ArrayList<Carro> carros;
+public class AdaptadorCarro extends RecyclerView.Adapter<AdaptadorCarro.CarroViewHolder>{
+    private ArrayList<Carro> Carros;
 
     public AdaptadorCarro(ArrayList<Carro> Carros){
-        this.carros=Carros;
+        this.Carros=Carros;
     }
 
     @Override
@@ -32,7 +32,7 @@ public class AdaptadorCarro extends RecyclerView  .Adapter<AdaptadorCarro.CarroV
     @Override
     public void onBindViewHolder(CarroViewHolder holder, int position) {
         Resources res= holder.itemView.getContext().getResources();
-        Carro p = carros.get(position);
+        Carro p = Carros.get(position);
         holder.foto.setImageResource(p.getFoto());
         holder.placa.setText(p.getPlaca());
         holder.marca.setText(res.getStringArray(R.array.marca)[p.getMarca()]);
@@ -43,7 +43,7 @@ public class AdaptadorCarro extends RecyclerView  .Adapter<AdaptadorCarro.CarroV
 
     @Override
     public int getItemCount() {
-        return carros.size();
+        return Carros.size();
     }
 
     public static class CarroViewHolder extends RecyclerView.ViewHolder{
@@ -65,5 +65,6 @@ public class AdaptadorCarro extends RecyclerView  .Adapter<AdaptadorCarro.CarroV
             precio = v.findViewById(R.id.txtprecio);
         }
     }
+
 }
 

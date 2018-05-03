@@ -7,14 +7,17 @@ import java.util.ArrayList;
  */
 
 public class Datos {
-    public static ArrayList<Carro> carros = new ArrayList<>();
+    private static ArrayList<Carro> lista = new ArrayList<Carro>();
 
-    public static void agregar(Carro p){
-        carros.add(p);
+    public static void guardar(Carro o) {
+        lista.add(o);
     }
 
-    public static ArrayList<Carro> getCarros(){
-        return carros;
+    public static ArrayList<Carro> getCarros() {
+        return lista;
     }
+
+
 
 }
+

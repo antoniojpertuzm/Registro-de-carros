@@ -17,6 +17,9 @@ public class Principal extends AppCompatActivity {
     private ArrayList<Carro> carros;
     private AdaptadorCarro adapter;
     private LinearLayoutManager llm;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,11 +42,11 @@ public class Principal extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               i = new Intent(Principal.this,AgregarCarro.class);
-               startActivity(i);
+                i = new Intent(Principal.this,AgregarCarro.class);
+                startActivity(i);
             }
         });
-    }
 
+    }
 
 }

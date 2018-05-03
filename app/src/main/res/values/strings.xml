@@ -8,26 +8,19 @@
     <string name="color">Color</string>
     <string name="precio">Precio</string>
     <string name="borrar">Borrar</string>
-
     <string name="titulo_agregar">Agregar Persona</string>
-
-
-
     <string name="guardar">Guardar</string>
     <string name="limpiar">Limpiar</string>
-
-
-
     <string name="mensaje_guardado">Persona Guardada Exitosamente</string>
-
     <string name="rojo">Rojo</string>
     <string name="negro">Negro</string>
     <string name="verde">verde</string>
-
-
     <string name="toyota">Toyota</string>
     <string name="bmw">BMW</string>
     <string name="volkswagen">Volkswagen</string>
+    <string name="registrar">Registrar</string>
+    <string name="listar">Listar</string>
+    <string name="reportar">Informes</string>
 
     <string-array name="color">
         <item>@string/rojo</item>
@@ -55,6 +48,15 @@
     </string-array>
 
     <string name="error">Este campo no puede estar vacio</string>
+    <string name="registrarCarros">Registrar Carros</string>
+
+    <string-array name="lstOpciones">
+        <item>@string/registrar</item>
+        <item>@string/listar</item>
+        <item>@string/reportar</item>
+    </string-array>
+
+
 
 
 </resources>
