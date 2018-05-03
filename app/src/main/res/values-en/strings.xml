@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Registro de Carros</string>
+    <string name="placa">"license plate "</string>
+    <string name="agregar_carro">"Add Cart "</string>
+    <string name="marca">Brand</string>
+    <string name="modelo">Model</string>
+    <string name="color">Color</string>
+    <string name="precio">Price</string>
+    <string name="titulo_agregar">Add Person</string>
+    <string name="guardar">save</string>
+    <string name="limpiar">Clean</string>
+    <string name="mensaje_guardado">Successfully Guarded Person</string>
+    <string name="rojo">Red</string>
+    <string name="negro">Black</string>
+    <string name="verde">green</string>
+    <string name="toyota">Toyota</string>
+    <string name="bmw">BMW</string>
+    <string name="volkswagen">Volkswagen</string>
+    <string name="borrar">Delete</string>
+    <string name="error">This field can not be blank</string>
+</resources>
